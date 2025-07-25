@@ -5,17 +5,17 @@ import javax.servlet.http.*;
 import java.io.IOException;
 
 public class Contact extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.getRequestDispatcher("/contact.jsp").forward(request, response);
+    }
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String nom = request.getParameter("nom");
         String email = request.getParameter("email");
         String message = request.getParameter("message");
-
-        System.out.println("Nom: " + nom);
-        System.out.println("Email: " + email);
-        System.out.println("Message: " + message);
-
         response.setContentType("text/html");
-        response.getWriter().println("<h2>Merci pour votre message, " + nom + "!</h2>");
+        response.getWriter().println("<h2>Merci " + nom + " pour votre message !</h2>");
     }
 }
