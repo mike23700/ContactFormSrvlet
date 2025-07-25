@@ -13,7 +13,7 @@
   <load-on-startup>1</load-on-startup>
 </servlet>
 <servlet-mapping>
-  <servlet-name>contact</servlet-name>
+  <servlet-name>Contact</servlet-name>
   <url-pattern>/contact</url-pattern>
 </servlet-mapping>
 </web-app>
