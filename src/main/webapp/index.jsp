@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,7 @@
 </head>
 <body>
 <h2>Contactez-nous</h2>
-<form action="/contact" method="post">
+<form action="/contact-form/index" method="post">
     Nom : <input type="text" name="nom"><br><br>
     Email : <input type="email" name="email"><br><br>
     Message : <br>
